@@ -19,8 +19,8 @@ jobs:
       run: |
         mkdir -p $GITHUB_WORKSPACE/tmp/configs
         mkdir -p $GITHUB_WORKSPACE/tmp/batfish
-        cp $GITHUB_WORKSPACE/main/*.cfg $GITHUB_WORKSPACE/tmp/configs/
-        cp $GITHUB_WORKSPACE/main/batfish/* $GITHUB_WORKSPACE/tmp/batfish/
+        cp $GITHUB_WORKSPACE/main/nexlab/configs/*.cfg $GITHUB_WORKSPACE/tmp/configs/
+        cp $GITHUB_WORKSPACE/main/nexlab/configs/batfish/* $GITHUB_WORKSPACE/tmp/batfish/
         echo "::set-output name=snapshot_dir::$GITHUB_WORKSPACE/tmp/"
       id: prepare_snapshot
 
