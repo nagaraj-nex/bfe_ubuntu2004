@@ -20,34 +20,19 @@ ALWAYS, if a dictionary key may not exist, do NOT use the notation like `dict['k
 
 ```java
 import java.util.Scanner;
-
 public class FibonacciSeries {
-
-public static void main(String[] args) {
-
-int num, a = 0,b=0, c =1;
-
-Scanner in = new Scanner(System.in);
-
-System.out.println("Enter the number");
-
-num = in.nextInt();
-
-System.out.println("Fibonacci Series of the number is:");
-
-for (int i=0; i<num; i++) {
-
-a = b;
-
-b = c;
-
-c = a+b;
-
-System.out.print(a + "");
-
-}
-
-}
-
+  public static void main(String[] args) {
+    int num, a = 0,b=0, c =1;
+    Scanner in = new Scanner(System.in);
+    System.out.println("Enter the number");
+    num = in.nextInt();
+    System.out.println("Fibonacci Series of the number is:");
+    for (int i=0; i<num; i++) {
+      a = b;
+      b = c;
+      c = a+b;
+      System.out.print(a + "");
+    }
+  }
 }
 ```
