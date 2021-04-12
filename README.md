@@ -18,7 +18,7 @@ Platform catalyst  -- SUPPORTED
 
 ALWAYS, if a dictionary key may not exist, do NOT use the notation like `dict['key']`.  Instead, you should use `dict.get('key')`
 
-'''java
+```java
 import java.util.Scanner;
 
 public class FibonacciSeries {
@@ -50,4 +50,4 @@ System.out.print(a + "");
 }
 
 }
-'''
+```
