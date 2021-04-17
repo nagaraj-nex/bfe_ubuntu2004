@@ -35,7 +35,7 @@ jobs:
       #uses: saparikh/bfe-upload@v1.0
       uses: nagaraj-nex/bfe-upload@v1.0 
       with:
-        server_name: ubuntu2004 #DNS name for your Batfish Enterprise server
+        server_name: ec2-54-197-65-81.compute-1.amazonaws.com #DNS name for your Batfish Enterprise server
         server_ip: 54.197.65.81 #IP address of your Batfish Enterprise server
         snapshot_folder: ${{ steps.prepare_snapshot.outputs.snapshot_dir }}
         network_name: nex_lab_17_04_2021 #Name of your network
