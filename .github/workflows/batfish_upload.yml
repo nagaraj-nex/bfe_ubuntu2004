@@ -6,6 +6,9 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H:%M:%S')"
 
     - name: Checkout this repo
       uses: actions/checkout@v2
@@ -39,7 +42,8 @@ jobs:
         server_ip: 54.197.65.81 #IP address of your Batfish Enterprise server
         snapshot_folder: ${{ steps.prepare_snapshot.outputs.snapshot_dir }}
         network_name: nex_lab #Name of your network
-        snapshot_name: ${{ github.sha }} #This should be a unique value per commit. You can use a combination \ 
+        snapshot_name: ${{ steps.date.outputs.date }}
+        #snapshot_name: ${{ github.sha }} #This should be a unique value per commit. You can use a combination \ 
                                     # of the branch name and timestamp if you don’t want to use the commit id
         ssl_certificate: ${{ secrets.BFE_SSL_CERTIFICATE }} #Github secret containing base64 encoded CA file
       id: upload_snapshot
