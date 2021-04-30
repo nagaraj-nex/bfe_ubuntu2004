@@ -38,7 +38,7 @@ jobs:
       #uses: saparikh/bfe-upload@v1.0
       uses: nagaraj-nex/bfe-upload@v1.0 
       with:
-        server_name: 192.168.233.138 #DNS name for your Batfish Enterprise server
+        server_name: ubuntu2004.linuxvmimages.local #DNS name for your Batfish Enterprise server
         server_ip: 192.168.233.138 #IP address of your Batfish Enterprise server
         snapshot_folder: ${{ steps.prepare_snapshot.outputs.snapshot_dir }}
         network_name: nex_lab #Name of your network
