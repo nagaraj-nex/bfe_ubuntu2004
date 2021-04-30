@@ -11,7 +11,6 @@ Using only what has been covered in previous labs, use Netmiko to:
   * Saving the configuration
   * Backing up configuration
   * Writing configuration to file
-  * 
 
 Save this script in the `scripts` directory and call it `backup.py`
 
