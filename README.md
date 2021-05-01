@@ -1,7 +1,7 @@
 # bfe
 
 
-Using only what has been covered in previous labs, use Netmiko to:
+Using only _what_ has been covered in previous labs, use Netmiko to:
 
 * Save the configurations for each **csr1** and **csr2**: `write memory`
 * Backup the configuration for each **csr1** and **csr2** to your jump host saving them in `/home/nexaria/scripts/configs`.  
